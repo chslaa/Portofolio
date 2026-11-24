@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portofolio resmi mahasiswa Teknologi Informasi">
+  <title>Portofolio | Carissa Ivana Putri</title>
+
+  <!-- Bootstrap 5 + Font + Ikon -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="0px 0px -60%" tabindex="0">
+
+  <!-- 1. HEADER / NAVBAR -->
+  <header>
+    <nav id="mainNav" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#beranda">Carissa.</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Buka menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tentang">Tentang</a></li>
+            <li class="nav-item"><a class="nav-link" href="#keahlian">Keahlian</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyek">Proyek</a></li>
+            <li class="nav-item"><a class="nav-link" href="#perjalanan">Perjalanan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          </ul>
+          <!-- Tombol ganti tema terang/gelap -->
+          <button id="themeToggle" class="btn btn-theme ms-lg-3 mt-2 mt-lg-0" type="button" aria-label="Ganti mode terang atau gelap">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+
+        </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 2. HERO -->
+    <section id="beranda" class="hero d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
+            <p class="hero-hello">Halo! saya</p>
+            <h1 class="hero-name">Carissa Ivana Putri</h1>
+            <p class="hero-role">Mahasiswa Sistem Informasi &middot; Web Development</p>
+            <p class="hero-desc">NIM 682026004 &mdash; Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Kristen Satya Wacana. Saya tertarik mempelajari cara kerja sebuah usaha dan membantu membuatnya lebih lancar dengan bantuan teknologi.</p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
+              <a href="#proyek" class="btn btn-main">Lihat proyek</a>
+              <a href="#kontak" class="btn btn-soft">Hubungi saya</a>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 d-flex justify-content-center">
+            <div class="avatar-wrap">
+              <img src="assets/img/profil.jpeg" alt="Foto profil Carissa Ivana Putri" class="avatar-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TENTANG & KEAHLIAN -->
+    <section id="tentang" class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="section-title">Tentang saya</h2>
+            <p>Halo! Nama saya Carissa Ivana Putri, seorang mahasiswa Program Studi Sistem Informasi di Fakultas Teknologi Informasi, Universitas Kristen Satya Wacana. Saya berasal dari Kabupaten Semarang dan saat ini sedang menempuh semester 1. Saya memilih bidang teknologi informasi karena tertarik melihat bagaimana teknologi dapat mempermudah pekerjaan sehari-hari dan membantu suatu usaha berjalan lebih rapi.</p>
+            <p>Dalam perkuliahan, saya memiliki minat khusus di bidang pengembangan web (web development) dan analisis sistem. Saat ini, saya sedang aktif mempelajari dasar-dasar pembuatan website menggunakan HTML dan CSS, serta belajar merancang tampilan antarmuka yang nyaman dan mudah digunakan oleh pengguna.</p>
+            <p>Untuk tujuan jangka pendek, saya ingin terus mengasah kemampuan teknis dengan mengerjakan berbagai proyek pembuatan website yang nyata. Ke depannya, saya berharap dapat mengikuti program magang atau berkolaborasi dalam proyek tim untuk menambah pengalaman praktis sebelum terjun ke dunia kerja.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="keahlian" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title text-center">Keahlian</h2>
+        <p class="section-sub text-center">Pilih kategori untuk menyaring kemampuan.</p>
+
+        <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" id="skillFilter" role="group" aria-label="Filter keahlian">
+          <button class="btn btn-chip active" data-filter="all">Semua</button>
+          <button class="btn btn-chip" data-filter="web">Web</button>
+          <button class="btn btn-chip" data-filter="tools">Tools</button>
+          <button class="btn btn-chip" data-filter="soft">Soft skills</button>
+        </div>
+
+        <div class="row g-3" id="skillGrid">
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="web">
+            <div class="skill-card"><i class="bi bi-filetype-html"></i><h3>HTML5</h3><span>Menengah</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="web">
+            <div class="skill-card"><i class="bi bi-filetype-css"></i><h3>CSS3</h3><span>Menengah</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="web">
+            <div class="skill-card"><i class="bi bi-bootstrap"></i><h3>Bootstrap 5</h3><span>Dasar-menengah</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="web">
+            <div class="skill-card"><i class="bi bi-filetype-js"></i><h3>JavaScript</h3><span>Dasar</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="web">
+            <div class="skill-card"><i class="bi bi-filetype-py"></i><h3>Python</h3><span>Dasar</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="tools">
+            <div class="skill-card"><i class="bi bi-git"></i><h3>Git &amp; GitHub</h3><span>Dasar</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="tools">
+            <div class="skill-card"><i class="bi bi-vector-pen"></i><h3>Figma</h3><span>Dasar</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="tools">
+            <div class="skill-card"><i class="bi bi-database"></i><h3>MySQL</h3><span>Sedang dipelajari</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="soft">
+            <div class="skill-card"><i class="bi bi-people"></i><h3>Kerja tim</h3><span>Aktif di organisasi</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="soft">
+            <div class="skill-card"><i class="bi bi-chat-dots"></i><h3>Komunikasi</h3><span>Presentasi &amp; diskusi</span></div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 skill-item" data-cat="soft">
+            <div class="skill-card"><i class="bi bi-alarm"></i><h3>Manajemen waktu</h3><span>Terbiasa tenggat</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. GALERI PROYEK -->
+    <section id="proyek" class="section">
+      <div class="container">
+        <h2 class="section-title text-center">Proyek &amp; karya</h2>
+        <p class="section-sub text-center">Beberapa karya yang pernah saya kerjakan.</p>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card project-card h-100">
+              <img src="assets/img/proyek1.png" class="card-img-top" alt="Tangkapan layar proyek 1">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title">Website Portofolio Pribadi</h3>
+                <p class="card-text">Merancang dan membangun halaman web profil pribadi yang responsif menggunakan HTML dan CSS untuk menampilkan informasi diri serta riwayat kegiatan.</p>
+                <div class="mb-3"><span class="tag">HTML5</span> <span class="tag">Bootstrap</span></div>
+                <a href="#" class="btn btn-main btn-sm mt-auto align-self-start">Lihat detail</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card project-card h-100">
+              <img src="assets/img/proyek2.png" class="card-img-top" alt="Tangkapan layar proyek 2">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title">Analisis Alur Bisnis UMKM Hardware</h3>
+                <p class="card-text">Memetakan proses operasional dan transaksi penjualan pada UMKM hardware ke dalam bentuk flowchart terstruktur untuk membantu pemilik usaha mengidentifikasi kendala dan merapikan pencatatan.</p>
+                <div class="mb-3"><span class="tag">Flowchart</span> <span class="tag">Analisis Sistem</span></div>
+                <a href="https://drive.google.com/file/d/1rsj22ekIFtqCnheleDik_HIB5JSbZ7jG/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-main btn-sm mt-auto align-self-start">Lihat Dokumen</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card project-card h-100">
+              <img src="assets/img/proyek3.png" class="card-img-top" alt="Tangkapan layar proyek 3">
+              <div class="card-body d-flex flex-column">
+                <h3 class="card-title">Desain UI/UX Toko Macaron</h3>
+                <p class="card-text">Merancang tampilan antarmuka promosi produk macaron bernuansa pastel di Figma, lengkap dengan penempatan tombol aksi (CTA) yang jelas untuk memudahkan pengguna melakukan pemesanan.</p>
+                <div class="mb-3"><span class="tag">Figma</span> <span class="tag">UI/UX</span></div>
+                <a href="https://www.figma.com/design/ngIMzKx5VtBTrzn4y7uDUf/T5Figma_PTI-A_682026004?node-id=0-1" target="_blank" rel="noopener" class="btn btn-main btn-sm mt-auto align-self-start">Lihat desain</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CREATIVE CHALLENGE: Perjalanan Belajar -->
+    <section id="perjalanan" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title text-center">Perjalanan belajar</h2>
+        <p class="section-sub text-center">Langkah-langkah yang membawa saya ke dunia IT.</p>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <ol class="timeline">
+              <li>
+                <span class="tl-year">2026</span>
+                <h3>Lulus dari SMA Negeri 1 Ambarawa</h3>
+                <p>Mulai tertarik dengan dunia teknologi karena ingin mengetahui lebih luas bagaimana teknologi dimanfaatkan untuk menjalankan dan mengembangkan sebuah bisnis.</p>
+              </li>
+              <li>
+                <span class="tl-year">2026</span>
+                <h3>Mahasiswa Baru Sistem Informasi</h3>
+                <p>Mulai menempuh pendidikan di Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Kristen Satya Wacana.</p>
+              </li>
+              <li>
+                <span class="tl-year">2026</span>
+                <h3>Eksplorasi Dasar Pemrograman Web</h3>
+                <p>Mulai aktif mengikuti kelas praktikum dan mengerjakan tugas-tugas dasar pembuatan halaman web menggunakan HTML dan CSS.</p>
+              </li>
+              <li>
+                <span class="tl-year">Sekarang</span>
+                <h3>Praktikum Pengantar Teknologi Informasi</h3>
+                <p>Membangun portofolio ini dari nol dengan HTML5, Bootstrap 5, dan JavaScript.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <!-- Section tambahan: Lagu favorit -->
+    <section id="lagu" class="section">
+      <div class="container">
+        <h2 class="section-title text-center">Lagu favorit</h2>
+        <p class="section-sub text-center">Playlist yang menemani saya belajar dan mengerjakan tugas.</p>
+        <div class="row g-4">
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="song-card">
+              <div class="vinyl" aria-hidden="true"></div>
+              <div class="song-info">
+                <h3>Oceans & Engines</h3>
+                <p>NIKI</p>
+                <a href="https://youtu.be/DropwjmHtoo?si=bT-WS6UnEFqAMBf6" target="_blank" rel="noopener" class="song-link"><i class="bi bi-play-circle"></i> Dengarkan</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="song-card">
+              <div class="vinyl" aria-hidden="true"></div>
+              <div class="song-info">
+                <h3>Capital Letters</h3>
+                <p>Hailee Steinfeld, BloodPop®</p>
+                <a href="https://youtu.be/pj6k-EFxqAI?si=r9hv3-HJriVE9m4W" target="_blank" rel="noopener" class="song-link"><i class="bi bi-play-circle"></i> Dengarkan</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="song-card">
+              <div class="vinyl" aria-hidden="true"></div>
+              <div class="song-info">
+                <h3>Labyrinth</h3>
+                <p>Taylor Swift</p>
+                <a href="https://youtu.be/xTXsKMXUi7w?si=OGs2P5x1ADGln1zb" target="_blank" rel="noopener" class="song-link"><i class="bi bi-play-circle"></i> Dengarkan</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- 5. FOOTER -->
+  <footer id="kontak" class="footer">
+    <div class="container text-center">
+      <h2 class="footer-title">Mari berkolaborasi</h2>
+      <p class="footer-text">Punya ide proyek atau ingin berdiskusi? Hubungi saya lewat tautan berikut.</p>
+      <div class="social d-flex justify-content-center gap-3 mb-4">
+        <a href="https://github.com/chslaa" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/rissavanaa" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&to=carissaivana999@gmail.com" target="_blank" rel="noopener" aria-label="Email"><i class="bi bi-envelope"></i></a>
+      </div>
+      <p class="copy mb-1">&copy; <span id="year">2026</span> Carissa Ivana Putri. Hak cipta dilindungi.</p>
+      <p class="copy mb-0">Program Studi Sistem Informasi, Fakultas Teknologi Informasi, Universitas Kristen Satya Wacana.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
